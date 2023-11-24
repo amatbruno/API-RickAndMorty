@@ -46,6 +46,7 @@
 
 header {
     background-color: var(--character-bg-3);
+    background-color: light;
 }
 
 h1 {
@@ -91,95 +92,15 @@ label {
     background-color: rgba(172, 255, 47, 0.726);
 }
 
-
-
-
-/*COLOR PANELS*/
-#color-panel {
-    display: flex;
-    background-color: var(--background-color);
+button {
+    padding: 10px;
+    background-color: #525ce4;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 4px;
+    margin-top: 5px;
 }
-
-#galNav {
-    height: 100vh;
-    width: var(--sidePane);
-    left: 0;
-    bottom: 0;
-    overflow: scroll;
-    background: hsl(220, 50%, 10%);
-    color: var(--background-color);
-}
-
-#galNav a {
-    color: white;
-    text-decoration: none;
-}
-
-#galNav ul {
-    list-style-type: none;
-}
-
-#viewer {
-    display: block;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    width: calc(100% - var(--sidePane));
-}
-
-#display {
-    --size: 400px;
-    width: var(--size);
-    height: var(--size);
-}
-
-#gallery {
-    overflow: scroll;
-    height: calc(100vh - 400px);
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.thumbWrapper {
-    overflow: hidden;
-    width: var(--thumbSize);
-    height: var(--thumbSize);
-    position: relative;
-    color: hsla(0, 0%, 100%, 0);
-    background: hsla(0, 0%, 10%, 0);
-    transition: 120ms;
-}
-
-.thumbWrapper h6 {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    bottom: -8px;
-    font-size: 10px;
-}
-
-.thumbWrapper :hover {
-    color: hsla(0, 0%, 100%, 1);
-    background: hsla(0, 0%, 0%, .2);
-}
-
-.thumb {
-    width: var(--thumbSize);
-    height: var(--thumbSize);
-    margin: 0;
-}
-
-.thumbWrapper,
-.album {
-    cursor: pointer
-}
-
-.album {
-    margin: 1em 0;
-    transition: 1000ms;
-}
-
-.album:hover {
-    text-decoration: underline;
+button:hover {
+    background-color: #5b65ff;
 }
